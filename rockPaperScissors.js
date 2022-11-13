@@ -11,6 +11,7 @@ function game(playerTurn, computerTurn) {
         playerTurn = scissors;
     } else {
         console.log('Invalid input.Try again...');
+        return;
     }
     console.log(`You choose ${playerTurn}`);
 
@@ -19,7 +20,7 @@ function game(playerTurn, computerTurn) {
         case 1: computerTurn = rock; break;
         case 2: computerTurn = paper; break;
         case 3: computerTurn = scissors; break;
-        default: console.log('Invalid input.Try again...');
+        default: console.log('Invalid input.Try again...'); break;
     }
     console.log(`The computer chooses ${computerTurn}`);
 
@@ -36,4 +37,4 @@ function game(playerTurn, computerTurn) {
     }
 
 }
-game('paper');
+game('knbjn');
