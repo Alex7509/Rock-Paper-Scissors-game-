@@ -37,4 +37,4 @@ function game(playerTurn, computerTurn) {
     }
 
 }
-game('knbjn');
+game('rock');
