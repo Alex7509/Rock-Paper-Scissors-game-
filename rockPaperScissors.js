@@ -13,15 +13,18 @@ function game(playerTurn, computerTurn) {
         console.log('Invalid input.Try again...');
         return;
     }
+    
     console.log(`You choose ${playerTurn}`);
 
     let computerRandomNumber = Math.floor(Math.random() * 3) + 1;
+    
     switch (computerRandomNumber) {
         case 1: computerTurn = rock; break;
         case 2: computerTurn = paper; break;
         case 3: computerTurn = scissors; break;
         default: console.log('Invalid input.Try again...'); break;
     }
+    
     console.log(`The computer chooses ${computerTurn}`);
 
     if ((playerTurn === rock && computerTurn === scissors) ||
@@ -35,6 +38,4 @@ function game(playerTurn, computerTurn) {
     } else {
         console.log('Draw!');
     }
-
 }
-game('rock');
